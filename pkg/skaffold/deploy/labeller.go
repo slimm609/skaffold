@@ -60,10 +60,7 @@ func NewLabeller(verStr string) *DefaultLabeller {
 }
 
 func (d *DefaultLabeller) Labels() map[string]string {
-	return map[string]string{
-		K8sManagedByLabelKey: d.skaffoldVersion(),
-		RunIDLabel:           d.runID,
-	}
+	return map[string]string{}
 }
 
 func (d *DefaultLabeller) RunIDKeyValueString() string {
